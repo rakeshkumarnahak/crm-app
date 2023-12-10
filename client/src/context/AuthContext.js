@@ -44,7 +44,7 @@ export const AuthContextProvider = ({ children }) => {
         navigate("/login", { replace: true });
       }
     } catch (err) {
-      console.log(err);
+      console.error("Error in registerUser:", err);
     }
   };
 
@@ -69,7 +69,7 @@ export const AuthContextProvider = ({ children }) => {
         toast.error(result.error);
       }
     } catch (err) {
-      console.log(err);
+      console.error("Error in registerUser:", err);
     }
   };
 
