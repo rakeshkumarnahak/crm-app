@@ -76,7 +76,7 @@ export const AuthContextProvider = ({ children }) => {
   // register request.
   const registerUser = async (userData) => {
     try {
-      const res = await fetch("https://crm-app-six.vercel.app/api/register", {
+      const res = await fetch("https://crm-app-six.vercel.app//api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -84,6 +84,7 @@ export const AuthContextProvider = ({ children }) => {
         body: JSON.stringify({ ...userData }),
       });
       const result = await res.json();
+      console.log(result);
 
       if (!result.error) {
         toast.success("user registered successfully! login into your account!");
