@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 app.use(morgan("tiny"));
 app.use(require("cors")({
-  origin: 'https://crm-app-7tna-948fg2vf3-rakeshkumarnahak.vercel.app',
+  origin: 'https://crm-app-7tna.vercel.app',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 }));
