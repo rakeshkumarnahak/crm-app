@@ -17,7 +17,7 @@ const AllContact = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        `https://crm-app-six.vercel.app/api/mycontacts`,
+        "https://crm-app-six.vercel.app/api/mycontacts",
         {
           method: "GET",
           headers: {

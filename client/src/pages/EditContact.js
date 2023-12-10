@@ -28,7 +28,7 @@ const EditContact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const res = await fetch(`https://crm-app-six.vercel.app/api/contact`, {
+    const res = await fetch("https://crm-app-six.vercel.app/api/contact", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
