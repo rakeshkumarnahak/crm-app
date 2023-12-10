@@ -17,6 +17,8 @@ app.use(require("cors")());
 app.use("/api", require("./routes/auth"));
 app.use("/api", require("./routes/contact"));
 
+app.get("/", (req, res) => res.send("Hello World"));
+
 // server configurations.
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, async () => {
