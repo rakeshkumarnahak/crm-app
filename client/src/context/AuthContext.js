@@ -76,7 +76,7 @@ export const AuthContextProvider = ({ children }) => {
   // register request.
   const registerUser = async (userData) => {
     try {
-      const res = await fetch("https://crm-app-six.vercel.app//api/register", {
+      const res = await fetch("https://crm-app-six.vercel.app/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
