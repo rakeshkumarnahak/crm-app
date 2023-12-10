@@ -24,7 +24,7 @@ const CreateContact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const res = await fetch(`https://crm-app-snowy.vercel.app/api/contact`, {
+    const res = await fetch(`https://crm-app-six.vercel.app/api/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

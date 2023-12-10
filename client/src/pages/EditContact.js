@@ -28,7 +28,7 @@ const EditContact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const res = await fetch(`https://crm-app-snowy.vercel.app/api/contact`, {
+    const res = await fetch(`https://crm-app-six.vercel.app/api/contact`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -51,7 +51,7 @@ const EditContact = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        `https://crm-app-snowy.vercel.app/api/contact/${id}`,
+        `https://crm-app-six.vercel.app/api/contact/${id}`,
         {
           method: "GET",
           headers: {

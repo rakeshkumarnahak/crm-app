@@ -21,7 +21,7 @@ export const AuthContextProvider = ({ children }) => {
   // check if the user is logged in.
   const checkUserLoggedIn = async () => {
     try {
-      const res = await fetch(`https://crm-app-snowy.vercel.app/api/me`, {
+      const res = await fetch(`https://crm-app-six.vercel.app/api/me`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -51,7 +51,7 @@ export const AuthContextProvider = ({ children }) => {
   // login request.
   const loginUser = async (userData) => {
     try {
-      const res = await fetch(`https://crm-app-snowy.vercel.app/api/login`, {
+      const res = await fetch(`https://crm-app-six.vercel.app/api/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -76,7 +76,7 @@ export const AuthContextProvider = ({ children }) => {
   // register request.
   const registerUser = async (userData) => {
     try {
-      const res = await fetch(`https://crm-app-snowy.vercel.app/api/register`, {
+      const res = await fetch(`https://crm-app-six.vercel.app/api/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

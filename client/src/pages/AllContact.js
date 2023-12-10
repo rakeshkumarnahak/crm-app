@@ -17,7 +17,7 @@ const AllContact = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        `https://crm-app-snowy.vercel.app/api/mycontacts`,
+        `https://crm-app-six.vercel.app/api/mycontacts`,
         {
           method: "GET",
           headers: {
@@ -42,7 +42,7 @@ const AllContact = () => {
     if (window.confirm("are you sure you want to delete this contact ?")) {
       try {
         const res = await fetch(
-          `https://crm-app-snowy.vercel.app/api/delete/${id}`,
+          `https://crm-app-six.vercel.app/api/delete/${id}`,
           {
             method: "DELETE",
             headers: {
